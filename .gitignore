@@ -4,4 +4,6 @@
 /wp-content/uploads
 /sitemap.*
 /wp-config.php
+/wp-content/plugins
 *.sql
+

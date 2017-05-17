@@ -28,19 +28,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Elements
 # Forms
 # Navigation
-	## Links
-	## Menus
+## Links
+## Menus
 # Accessibility
 # Alignments
 # Clearings
 # Widgets
 # Content
-	## Posts and pages
-	## Comments
+## Posts and pages
+## Comments
 # Infinite scroll
 # Media
-	## Captions
-	## Galleries
+## Captions
+## Galleries
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -105,6 +105,129 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "media/media";
 
-body {
-    background-color: black;
+// body {
+//     padding: 1em;
+// }
+
+#masthead {
+    height: 95vh;
+    .site-branding {
+        text-align: center;
+    }
+    img {
+        border-radius: 50%;
+        border: 5px solid lightgrey;
+        box-shadow: 0 0 10px 5px;
+        transition: 0.5s;
+    }
+    #site-navigation {
+        display: flex;
+        justify-content: center;
+        ul {
+            width: 90vw;
+            display: flex;
+            justify-content: space-around;
+            background: url("./images/abstract-black-and-white-wallpaper-16-invert.png");
+            background-attachment: fixed;
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 2px;
+            li {
+                a {
+                    padding: 1em;
+                    color: white;
+                    font-size: 1.1em;
+                    border-radius: 2px;
+                    transition: 0.7s;
+                }
+                a:hover {
+                    background-color: rgba(#ffffff, 0.46);
+                }
+            }
+        }
+    }
+    h1 {
+        margin: 1em 0;
+        font-size: 3em;
+        color: rgb(60, 60, 60);
+        font-family: Pacifico;
+    }
+    p {
+        font-weight: bold;
+        font-size: 1.5em;
+        color: rgb(60, 60, 60);
+        margin: 2em 0;
+    }
+}
+
+section {
+    // min-height: auto;
+    // max-height: 10em;
+    font-family: Roboto;
+    margin: 5em 0;
+    padding: 1vh;
+    // margin: 3em 4em;
+    background: url("./images/abstract-black-and-white-wallpaper-16-invert.png");
+    background-attachment: fixed;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 5px 2px black;
+    border-radius: 2px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    h2 {
+        font-size: 150%;
+        text-align: center;
+        color: black;
+        text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+    }
+    h3 {
+        font-size: 150%;
+        color: black;
+        text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+        text-align: center;
+    }
+    p {
+        font-size: 150%;
+        font-size: 1.2em;
+        // background-color: rgba(116, 116, 116, 0.9);
+        text-align: center;
+        max-width: auto;
+    }
+    a, a:visited {
+        color: white;
+        font-family: sans-serif;
+    }
+}
+
+footer {
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    text-align: center;
+    background: url("./images/abstract-black-and-white-wallpaper-16-invert.png");
+    background-attachment: fixed;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    a, a:visited {
+        color: white;
+    }
 }
